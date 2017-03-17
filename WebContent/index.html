@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<title>WebRTC Video Demo</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+<script src="kurento-utils.js"></script>
+<script src="index.js"></script>
+</head>
+
+<style>
+body {
+	background: #eee;
+	padding: 5% 0;
+}
+
+video {
+	background: black;
+	border: 1px solid gray;
+}
+
+.call-page {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+}
+</style>
+
+<body>
+
+	<div id="callPage" class="call-page">
+		<div id="videoFrame">
+			<video id="video" autoplay></video>
+		</div>
+
+		<div class="row text-center">
+			<a id="call" href="#" onclick="presenter(); return false;">
+				Presenter </a> 
+			<a id="viewer" href="#" onclick="viewer(); return false;">
+				Viewer</a> 
+			<a id="terminate" href="#" onclick="stop(); return false;">Stop</a>
+		</div>
+	</div>
+
+	
+
+</body>
+
+</html>
