@@ -7,14 +7,11 @@ in the session and sends media to all the clients in the session.
 ## Implementation
 
 The JAVA classes and their resposibilities are as follows.
-Classes &nbsp						 Responsibilities<br>
-MediaServer &nbsp             JAVA class resposible for establishing peer to peer connections with participants<br> 
-                         through web sockets. It manages answers, offers and ICS candidate selection while <br>
-                         establishing RTP connection between the peers. <br>
-Participant &nbsp             JAVA class to maintain a HashMap of participant names and their session ids. <br>
-Room &nbsp                    JAVA class to manage communications between all participants connected to a room <br> 
-                         and who want to communicate with each other. <br> 
-index.html &nbsp               The UI for logging in and setting up a call with others connected to the application.<br>
+
+* MediaServer class is resposible for establishing peer to peer connections with participants through web sockets. It manages answers,   offers and ICS candidate selection while establishing RTP connection between the peers. 
+* Participant class maintains a HashMap of participant names and their session ids. 
+* Room class manages communications between all participants connected to a room and who want to communicate with each other. 
+* index.html is the UI page for logging in and setting up a call with others connected to the application.
                          
 ## Installation
 
